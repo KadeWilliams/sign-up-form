@@ -108,10 +108,10 @@ input {
 }
 .top-right:first-child {
 	font-size: 1.6rem;
-	text-shadow:-1px -1px 0 rgba(237, 236, 236, 0.598),
-    1px -1px 0 rgba(237, 236, 236, 0.598),
-    -1px 1px 0 rgba(237, 236, 236, 0.598),
-    1px 1px 0 rgba(237, 236, 236, 0.598);
+	text-shadow:-1px -1px 0 rgba(191, 191, 191, 0.598),
+    1px -1px 0 rgba(191, 191, 191, 0.598),
+    -1px 1px 0 rgba(191, 191, 191, 0.598),
+    1px 1px 0 rgba(191, 191, 191, 0.598);
 	line-height: 1.4;
 }
 .col {
