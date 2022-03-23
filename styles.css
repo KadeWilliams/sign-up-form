@@ -46,12 +46,16 @@ table {
 }
 /* **************************************************** */
 
+html {
+	background-color:rgba(0, 0, 0, 0.865);
+}
 img {
 	width: 100%;
 }
 .outer-container {
 	height: 100vh;
 	display: flex;
+	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 	width: 100vw;
@@ -62,13 +66,13 @@ img {
 	max-width: 1000px;
     justify-content: space-evenly;
     align-items: center;
-	background-image: url('./arena.jpg');
+	background-image: url('./ball_through_hoop.jpg');
 	min-height: 800px;
 }
 .left {
 	display: flex;
 	justify-content: center;
-	background-color: rgba(171, 171, 171, 0.242);
+	/* background-color: rgba(171, 171, 171, 0.242); */
 	width: 50%
 }
 html {
@@ -101,14 +105,21 @@ input {
 }
 .top-right:first-child {
 	font-size: 1.2rem;
+	text-shadow:-1px -1px 0 rgba(237, 236, 236, 0.598),
+    1px -1px 0 rgba(237, 236, 236, 0.598),
+    -1px 1px 0 rgba(237, 236, 236, 0.598),
+    1px 1px 0 rgba(237, 236, 236, 0.598);
 }
 .col {
 	width: 46%;
 }
 .middle {
-	background-color: rgb(237, 237, 237);
+	background-color: rgba(237, 236, 236, 0.598);
 	padding: 20px 0;
 	box-shadow: 0 8px 6px -5px gray;
+	max-width: 90%;
+	display: flex;
+	flex-direction: column;
 }
 
 button {
@@ -133,14 +144,71 @@ button {
 	width: 100%;
 }
 .right{
-	background-color: rgb(215, 215, 215);
-}
-.right.row:nth-last-of-type(){
-	display:flex;
-	justify-content: flex-end;
-}
-.left > *,
-.right {
+	/* background-color: rgb(215, 215, 215); */
 	width: 50%;
 	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+@media only screen and (max-width: 1000px) {
+	.outer-container {
+	display: flex;
+	flex-direction: column;
+	}
+	.main {
+		/* background-color: rgb(215, 215, 215); */
+		justify-content: space-around;
+		flex-direction: column;
+	}
+	.left {
+		display: flex;
+		justify-content: center;
+		flex-direction: center;
+		top: 1px;
+	}
+	.right {
+		display: flex;
+	}
+	.right:last-child {
+		justify-content: space-around;
+	}
+	.top-right:first-child {
+		font-size: 1.1rem;
+	}
+	.top-right {
+		display:flex;
+		flex-direction: column;
+		justify-content: flex-end;
+	}
+	img {
+		width: 75%;
+		position: relative;
+		top: 15px;
+	}
+	.image {
+		display: flex;
+		justify-content: center;
+	}
+	.row {
+		display: inline-block;
+		padding-left: 10px;
+	}
+	.col {
+		width: 100%;
+	}
+	input {
+		width: 95%;
+	}
+	.col.bottom {
+		padding-top: 30px;
+	}
+	.bottom > *,
+	.top-right > *{
+		margin-top: 2vw;
+	}
+	.top-right:first-child {
+		padding-top: 10px;
+	}
 }
