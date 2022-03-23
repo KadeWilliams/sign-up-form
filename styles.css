@@ -228,3 +228,12 @@ input:invalid {
 input:valid {
 	border: 1px solid #005503;
 }
+button:hover {
+	cursor: pointer;
+	background-color: #2456b1;
+}
+a {
+	color: #17408B;
+	text-decoration: none;
+	font-weight: 400;
+}
