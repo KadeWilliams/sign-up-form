@@ -88,7 +88,7 @@ label {
 	width: 100%;
 }
 input {
-	width: 85%;
+	width: 90%;
 	border-color: #E5E7EB;
 	border: none;
 	border-radius: 4px;
@@ -99,7 +99,7 @@ input {
 	/* gap: 20px; */
 	flex-wrap: wrap;
 	width: 100%;
-	padding: .5vw;
+	padding: .5vw 0 .5vw .5vw;
 	padding-left: 40px;
 }
 .top-right {
